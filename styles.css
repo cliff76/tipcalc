@@ -1,0 +1,33 @@
+.wrapper {
+  width: 95%;
+  background-color: #72cee2;
+  padding: 10px;
+ margin: 0 auto ;
+  font-size:15px;
+  font-family: Helvetica, sans-serif;
+}
+span {
+  widows: 100px;
+  padding:10px 5px;
+}
+input {
+  width:250px;
+  margin: 10px 0 10px 0;
+}
+
+h3 {
+  margin-left: 5px;
+}
+.amount-field {
+  line-height: 21px;
+  padding: 2px;
+  font-size: 16px;
+  color: #666;
+}
+.tip-amount {
+  color: #fff;
+}
+ .percentage{
+  width: 52px;
+
+}
