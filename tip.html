@@ -9,35 +9,39 @@
          content must come *after* these tags -->
     <title>Tip Calculator</title>
         <link href=styles.css rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway:400,600" rel="stylesheet">
    
     </head>
 <body>
    <div class="wrapper">
+       <h1>Tip Calulator</h1>
   <span>Total bill amount not inclulding tax :</span>
   $ <input type="text" id="bill" class="amount-field" placeholder="xx.xx"> <br>
  
   
- <span>
+ <p>Fixed Amount Tip:</p>
+  
+  <span>
   <label for="tip">Tip Percentage:</label>
   
-  <input type="radio" class="percentage"  value="15" required />15%
- <input type="radio" class="percentage"  value="18" required />18%
-   <input type="radio" class="percentage"  value="20" required />20%
+  <input type="radio" name="selectTip" class="percentage"  value="15" onclick="tipCalculate(this.value, 'bill')">15%
+ <input type="radio" name="selectTip" class="percentage"  value="18" onclick="tipCalculate(this.value, 'bill')">18%
+   <input type="radio" name="selectTip" class="percentage"  value="20" onclick="tipCalculate(this.value, 'bill')">20%
+<input type="radio" name="selectTip" class="percentage"  value="25" onclick="tipCalculate(this.value, 'bill')">25%      
   </span>
-  
    
   <hr>
-  
-    <br>
+  <p>Sliding Scale Tip:</p>
+<span>
+   
+  <label for="tip">Tip Percentage:</label>
   <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" class="range-style">
   <span id="slideval">0%</span>
   <h3>Tip to leave = 
     <span id="tipamount" class="tip-amount">$0.00</span>
   </h3>                                           
-</div>
-    <script src="scripts.js">
-    </script>
+       </span></div>
+    <script src="scripts.js"></script>
     
     </body>
 </html>
