@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+    <title>Split Check</title>
+        <link href=styles.css rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway:400,600" rel="stylesheet">
+   
+    </head>
+<body>
+   <div class="wrapper">
+       <header>
+           <h1>Dining Out Buddy</h1>
+            <h2>Split Check</h2>
+                       
+           </header>
+       <nav><ul class="mainMenu">
+        <li><a href="#">Split Check</a></li>
+        <li><a href="index.html">Tip Calc</a></li>
+        </ul></nav>
+       
+        <div class="section">   
+  <form id="billAmt">
+       <span>Bill amount inclulding tax &amp; tip:</span>
+  $ <input type="text" name="bill" id="bill" class="amount-field" placeholder="xx.xx"> 
+    <button name="bill"> Clear</button>
+      </form>
+       
+       </div>
+ 
+    <div class="section">
+    <p>Check Split:</p>
+    
+      
+        <form id="splitCheck"> <span>How many ways to split?</span>
+  <select name="waysToSplit">
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	<option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+  </select>
+   
+      </form>
+       </div>
+           <div class="section">
+    <h3>Per Person:
+        <span id="perPerson" class="tip-amount">$0.00</span>
+    </h3>
+    
+    
+      
+       </div>
+    </div>
+    
+     
+    <script src="scripts.js"></script>
+    
+    </body>
+</html>
+

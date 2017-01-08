@@ -13,39 +13,58 @@
    
     </head>
 <body>
-   <div class="wrapper">
-       <h1>Tip Calulator</h1>
-  <form id="billAmt">
-       <span>Total bill amount not inclulding tax :</span>
-  $ <input type="text" name="bill" id="bill" class="amount-field" placeholder="xx.xx"> 
-    <button name="bill"> Clear</button>
-      </form>
+    <div class="wrapper">
+    
+    <header><h1>Dining Out Buddy</h1>
+               <h2>Tip Calculator</h2>
+    
+    </header>
+         <nav><ul class="mainMenu">
+        <li><a href="split.html">Split Check</a></li>
+        <li><a href="#">Tip Calc</a></li>
+        </ul></nav>
+   
        
-       <br>
- 
-  
- <p>Fixed Amount Tip:</p>
-  
-  <span>
-  <label for="tip">Tip Percentage:</label>
-  
-  <input type="radio" name="selectTip" class="percentage"  value="15" onclick="tipCalculate(this.value, 'bill')">15%
- <input type="radio" name="selectTip" class="percentage"  value="18" onclick="tipCalculate(this.value, 'bill')">18%
-   <input type="radio" name="selectTip" class="percentage"  value="20" onclick="tipCalculate(this.value, 'bill')">20%
-<input type="radio" name="selectTip" class="percentage"  value="25" onclick="tipCalculate(this.value, 'bill')">25%      
-  </span>
+       <div class="section">
+               <form id="billAmt">
+               <span>Total bill amount inclulding tax:</span>
+                   $<input type="text" name="bill" id="bill" class="amount-field" placeholder="xx.xx"> 
+                <button name="bill"> Clear</button>
+              </form>
+
+
+
+         <p>Fixed Amount Tip:</p>
+
+          <span>
+          <label for="tip">Tip Percentage:</label>
+
+          <input type="radio" name="selectTip" class="percentage"  value="15" onclick="tipCalculate(this.value, 'bill')">15%
+         <input type="radio" name="selectTip" class="percentage"  value="18" onclick="tipCalculate(this.value, 'bill')">18%
+           <input type="radio" name="selectTip" class="percentage"  value="20" onclick="tipCalculate(this.value, 'bill')">20%
+        <input type="radio" name="selectTip" class="percentage"  value="25" onclick="tipCalculate(this.value, 'bill')">25%      
+          </span>
+           </div>
+       <div class="section" id="mobileHide"><p>Or Sliding Scale Tip:</p>
+
    
-  <hr>
-  <p>Sliding Scale Tip:</p>
-<span>
-   
-  <label for="tip">Tip Percentage:</label>
-  <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" class="range-style">
-  <span id="slideval">0%</span>
-  <h3>Tip to leave = 
-    <span id="tipamount" class="tip-amount">$0.00</span>
-  </h3>                                           
-       </span></div>
+          <label for="tip">Tip Percentage:</label>
+          <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value, 'bill')" class="range-style">
+          <span id="slideval">0%</span>
+        </div>
+       <div class="section">
+          <h3>Tip to leave = 
+            <span id="tipamount" class="tip-amount">$0.00</span>
+           </h3>  </div>
+           
+       <div class="section">
+          <h3>Total Bill = 
+            <span id="billAmount" class="tip-amount">$0.00</span>
+           </h3>  </div>
+      
+       
+  
+    </div><!--     END OF WRAPPER-->
     <script src="scripts.js"></script>
     
     </body>

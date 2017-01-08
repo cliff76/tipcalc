@@ -1,24 +1,83 @@
-h1 h3{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+body{
+    background: #EFF0E2;
 }
-p{font-weight: 500;}
 
 .wrapper {
     margin: 0 auto ;
-  width: 60%;
-  background-color: #72cee2;
-  padding: 10px;
+  width: 50%;
+  padding: 20px;
   font-size:15px;
     font-family: 'Raleway', sans-serif; 
+
+}
+header{
+    
+  margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: #E3CD27;
+    font-variant: small-caps;
+    
+}
+h1 h2{
+    font-family: 'Oswald', sans-serif;
+    padding-left: 10px;
+}
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+   }
+
+header h2 {
+    font-variant: small-caps;
+    text-align: center;
+    color: #fff;
+    
+}
+.mainMenu{
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 22px;
+    background-color: #74665c;
+   
+}
+
+ul.mainMenu {
+    margin-top: 20px;
+}
+.mainMenu li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
  
+}
+
+.mainMenu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-variant: small-caps;
+    
+}
+
+.mainMenu a:hover {
+    color: #E3CD27;
+}
+
+p{font-weight: 600;}
+ .section{
+     margin-bottom: 10px;
+     background-color: #B0AEA1;
+     padding:10px;
+     
 }
 span {
   widows: 100px;
   padding:10px 5px;
 }
 input {
-  width:200px;
+  width:120px;
   margin: 10px 0 10px 0;
 }
 
@@ -37,4 +96,20 @@ h3 {
  .percentage{
   width: 25px;
 
+}
+
+button {
+     padding:5px 10px;
+    border-radius: 5px;
+     border: 1px solid #666;
+  color:#000;
+  text-decoration:none;
+    background-color: #ecedee;
+   
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  
+  .mobileHide{ display: none; }
+    .wrapper {width: 90%;}
 }
