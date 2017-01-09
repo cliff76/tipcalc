@@ -1,5 +1,9 @@
 function tipCalculate (slider, bill){
-    
+	updateTip(slider, bill);
+	document.getElementById('slider').value = slider;
+}
+
+function updateTip(slider, bill){    
     var tip = document.getElementById('tipamount');
     var total = document.getElementById('billAmount');
     var slideval = document.getElementById('slideval');
