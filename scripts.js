@@ -35,7 +35,9 @@ function splitCheck(bill){
     var bill = parseInt(document.getElementById(bill).value);
     var split = document.getElementById('splitCheck');
     var pp = document.getElementById('perPerson');
-    
+    console.log(bill);
+    console.log(split);
+    console.log(pp);
      if (bill == null || bill == '') {
     pp.innerHTML = 'Please enter an amount';
     return false;

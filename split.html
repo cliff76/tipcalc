@@ -27,7 +27,7 @@
         <div class="section">   
   <form id="billAmt">
        <span>Bill amount inclulding tax &amp; tip:</span>
-  $ <input type="text" name="bill" id="bill" class="amount-field" placeholder="xx.xx"> 
+  $ <input type="number" name="bill" id="bill" class="amount-field" placeholder="xx.xx"> 
     <button name="bill"> Clear</button>
       </form>
        
@@ -57,13 +57,13 @@
         <span id="perPerson" class="tip-amount">$0.00</span>
     </h3>
     
-    
+   <button onclick="splitCheck(bill);">Calculate</button>
       
        </div>
     </div>
     
      
-    <script src="scripts.js"></script>
+    <script src="split.js"></script>
     
     </body>
 </html>
