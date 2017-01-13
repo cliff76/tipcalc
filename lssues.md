@@ -1,5 +1,10 @@
 ## Issues
 
+### January 12,2017
+Getting closer. Onchange is the key.
+Now to get the value into the variable.
+
+
 ### January 10,2017
 
 I can't figure out how to get the check to split.

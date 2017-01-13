@@ -27,7 +27,7 @@
         <div class="section">   
   <form id="billAmt">
        <span>Bill amount inclulding tax &amp; tip:</span>
-  $ <input type="number" name="bill" id="bill" class="amount-field" placeholder="xx.xx"> 
+  $ <input type="text" name="bill" id="bill" class="amount-field" placeholder="xx.xx"> 
     <button name="bill"> Clear</button>
       </form>
        
@@ -35,36 +35,42 @@
  
     <div class="section">
     <p>Check Split:</p>
+<!--
     
+        I need to add the rest of the onchange to the other options
+-->
       
-        <form id="splitCheck"> <span>How many ways to split?</span>
-  <select name="waysToSplit">
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-	<option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-	<option value="9">9</option>
-	<option value="10">10</option>
-  </select>
+        <div id="waysToSplit"> <span>How many ways to split?</span>
+          <select id="splitCheck">
+            <option value="1" onchange="splitCheck(this.value,)" selected="selected">1</option>
+            <option value="2" onchange="splitCheck(this.value,)">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
    
-      </form>
+      </div>
        </div>
            <div class="section">
     <h3>Per Person:
         <span id="perPerson" class="tip-amount">$0.00</span>
     </h3>
     
-   <button onclick="splitCheck(bill);">Calculate</button>
+   <button onclick="splitCheck();">Calculate</button>
       
        </div>
     </div>
     
+
+
      
     <script src="split.js"></script>
-    
+        
     </body>
 </html>
 

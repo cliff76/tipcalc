@@ -1,11 +1,11 @@
-function splitCheck(bill){
-    var bill = parseInt(document.getElementById(bill).value);
-    console.log(bill);
-    var split = document.getElementById('splitCheck');
+function splitCheck(){
+    var bill = parseInt(document.getElementById('bill').value);
+    alert(bill);
+    var split = document.getElementById('splitCheck').value;
+//    alert(value);
+//    This is where it breaks. How do I get the value in from?
     var pp = document.getElementById('perPerson');
-    console.log(bill);
-    console.log(split);
-    console.log(pp);
+    
     
     
      if (bill == null || bill == '') {
@@ -20,4 +20,7 @@ function splitCheck(bill){
      pp.innerHTML ='$' + ((bill * prcnt) / split).toFixed(2);
         
     }
+    
   }
+
+
