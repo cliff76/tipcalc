@@ -1,14 +1,14 @@
 function splitCheck(){
     var bill = parseInt(document.getElementById('bill').value);
-    alert(bill);
+   // alert(bill);
     var split = document.getElementById('splitCheck').value;
-//    alert(value);
-//    This is where it breaks. How do I get the value in from?
+   //alert(split);
+ 
     var pp = document.getElementById('perPerson');
     
     
     
-     if (bill == null || bill == '') {
+     if (bill == null || bill == '') { //entering nothing never gets this message, just zero gets it.
     pp.innerHTML = 'Please enter an amount';
     return false;
   }
@@ -16,10 +16,13 @@ function splitCheck(){
     pp.innerHTML = 'Please enter a number';
     return false;
   }
-    if (split =='' || split >=2) {
-     pp.innerHTML ='$' + ((bill * prcnt) / split).toFixed(2);
+    
+    if (split == 1 || split >=2) {
+       
+     pp.innerHTML ='$' + (bill  / split).toFixed(2);
         
     }
+    
     
   }
 
